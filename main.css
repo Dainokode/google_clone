@@ -1,0 +1,161 @@
+/* basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #3c4043;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 100;
+    color: #3c4043;
+}
+
+/* utility classes */
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.bottom-line {
+    height: 0.5px;
+    background: #f1f1f1;
+}
+
+/* navbar flex right */
+.navbar {
+    padding: 1.5rem;
+}
+
+.navbar, ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.navbar ul li, .advanced-navbar ul li {
+    padding-right: 1rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* advanced navbar */
+.advanced-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f1f1f1;
+}
+
+.advanced-navbar .navbar-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* advanced page section */
+.advanced-search-title {
+    font-size: 22px;
+    font-weight: normal;
+    color: #d93025;
+    padding: 2rem 0;
+}
+
+.advanced-search-form {
+    padding: 3rem 0;
+}
+
+.advanced-search-form .input-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.advanced-search-form > .input-group > div {
+    width: 50%;
+}
+
+.advanced-search-form > .input-group > div > input {
+    width: 120%;
+    padding: 0.4rem;
+    border: 1px solid #c0bbbb;
+    margin-left: -15rem;
+}
+
+.advanced-search-form .input-group input:focus {
+    outline: 1px solid #0059ffe0;
+}
+
+/* search-form section */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.search-form .images-span {
+    color: #0059ffe0;
+    font-size: 1.1rem;
+}
+
+.image-container .images-span {
+    position: relative;
+    bottom: 30px;
+    right: 50px;
+}
+
+.search-form .inner-container .google-logo {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    object-fit: contain;
+    object-position: center bottom;
+    margin-bottom: 1.5rem;
+}
+
+.search-form .inner-container form input[type="text"] {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    border-radius: 50px;
+    width: 38rem;
+    display: block;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.search-form .inner-container form input[type="text"]:hover, .search-form .inner-container form input[type="submit"]:hover, .advanced-search .advanced-search-form input[type="submit"]:hover {
+    box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.15);
+}
+
+.search-form .inner-container form input[type="submit"], .advanced-search .advanced-search-form input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    font-size: 16px;
+    margin: 35px 4px;
+    padding: 0.7rem 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+}
+
+.advanced-search .advanced-search-form input[type="submit"] {
+    background-color: #4d90fe;
+    color: #fff;
+}
